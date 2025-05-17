@@ -39,3 +39,41 @@ if (form) {
     }, 1200);
   });
 }
+
+// --- Modern Skills Section: Tooltips Only ---
+document.addEventListener('DOMContentLoaded', () => {
+  const skills = document.querySelectorAll('.skill-modern');
+  skills.forEach(skill => {
+    // Only add tooltip, no progress bar
+    const desc = skill.getAttribute('data-desc');
+    if (desc) {
+      const tooltip = document.createElement('span');
+      tooltip.className = 'tooltip';
+      tooltip.textContent = desc;
+      skill.appendChild(tooltip);
+      skill.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+        tooltip.style.opacity = '1';
+      });
+      skill.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+        tooltip.style.opacity = '0';
+      });
+    }
+  });
+});
+
+// Mobile nav hamburger menu toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navLinksList = document.querySelector('.nav-links');
+if (navToggle && navLinksList) {
+  navToggle.addEventListener('click', () => {
+    navLinksList.classList.toggle('open');
+  });
+  // Close menu when a link is clicked (on mobile)
+  navLinksList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinksList.classList.remove('open');
+    });
+  });
+}
