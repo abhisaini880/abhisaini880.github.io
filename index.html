@@ -1,214 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Abhishek Saini — Senior Software Engineer</title>
+    <meta name="description" content="" data-meta="description" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Saini | Lead Software Developer</title>
-    <meta name="description"
-        content="Portfolio of Abhishek Saini - Lead Software Developer, Cloud & Backend Specialist, Python & AWS Expert.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="profilePic.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" data-meta="og:title" />
+    <meta property="og:description" content="" data-meta="og:description" />
+    <meta property="og:url" content="" data-meta="og:url" />
+    <meta property="og:image" content="" data-meta="og:image" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Theme color (matches token base — site defaults to dark) -->
+    <meta name="theme-color" content="#0e0e0e" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- Fonts: Fraunces (display serif) + Inter (UI sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Montserrat:wght@400;700&display=swap"
-        rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</head>
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap"
+    />
 
-<body>
-    <div class="bg-glow"></div>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Abhishek Saini</div>
-            <button class="nav-toggle" aria-label="Open navigation menu">
-                <i class="ph ph-list"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about" class="section hero-section">
-            <div class="hero-content">
-                <div class="profile-img-wrapper">
-                    <img src="profilePic.png" alt="Abhishek Saini" class="profile-img" loading="lazy">
-                </div>
-                <h1 class="animated-headline"><span>Abhishek Saini</span></h1>
-                <h2 class="animated-role">Lead Software Developer</h2>
-                <p class="subtitle">Experienced Software Developer with 5+ years in scalable, reliable software
-                    solutions. Python, AWS, and system architecture specialist. Team leader, resource optimizer, and
-                    cost reducer.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn primary">Contact Me</a>
-                    <a href="/resume.pdf" class="btn secondary" target="_blank">Download Resume</a>
-                </div>
-                <div class="hero-socials">
-                    <a href="https://github.com/abhisaini880" target="_blank" aria-label="GitHub"><i
-                            class="ph ph-github-logo"></i></a>
-                    <a href="http://linkedin.com/in/abhishek-saini-880/" target="_blank" aria-label="LinkedIn"><i
-                            class="ph ph-linkedin-logo"></i></a>
-                    <a href="mailto:abhisaini880@gmail.com" aria-label="Email"><i class="ph ph-envelope"></i></a>
-                    <a href="https://medium.com/@abhishek-saini" target="_blank" aria-label="Medium"><i
-                            class="ph ph-medium-logo"></i></a>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="section skills-modern-section">
-            <h2><i class="ph ph-lightning"></i> Skills</h2>
-            <div class="skills-categories">
-                <div class="skills-category">
-                    <h3>Languages</h3>
-                    <div class="skills-list">
-                        <div class="skill-modern" data-desc="Django, Flask, FastAPI">
-                            <i class="ph ph-code"></i>
-                            <span>Python</span>
-                            <span class="years-badge">5+ yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="Node.js">
-                            <i class="ph ph-brackets-curly"></i>
-                            <span>JavaScript</span>
-                            <span class="years-badge">4 yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="MySQL, PostgreSQL">
-                            <i class="ph ph-database"></i>
-                            <span>SQL</span>
-                            <span class="years-badge">3 yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="MongoDB, ElasticSearch, Redis">
-                            <i class="ph ph-stack"></i>
-                            <span>NoSQL</span>
-                            <span class="years-badge">2 yrs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skills-list">
-                        <div class="skill-modern" data-desc="EC2, Lambda, S3, EKS">
-                            <i class="ph ph-cloud"></i>
-                            <span>AWS</span>
-                            <span class="years-badge">4 yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="Containers, Compose">
-                            <i class="ph ph-cube"></i>
-                            <span>Docker</span>
-                            <span class="years-badge">4 yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="EKS, Helm">
-                            <i class="ph ph-hexagon"></i>
-                            <span>Kubernetes</span>
-                            <span class="years-badge">3 yrs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Tools & OS</h3>
-                    <div class="skills-list">
-                        <div class="skill-modern" data-desc="Ubuntu, CentOS">
-                            <i class="ph ph-terminal"></i>
-                            <span>Linux</span>
-                            <span class="years-badge">4 yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="GitHub, Bitbucket">
-                            <i class="ph ph-git-branch"></i>
-                            <span>Git</span>
-                            <span class="years-badge">4 yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="API Testing">
-                            <i class="ph ph-paper-plane"></i>
-                            <span>Postman</span>
-                            <span class="years-badge">3 yrs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skills-list">
-                        <div class="skill-modern" data-desc="System Design, Debugging">
-                            <i class="ph ph-lightbulb"></i>
-                            <span>Problem Solving</span>
-                            <span class="years-badge">5+ yrs</span>
-                        </div>
-                        <div class="skill-modern" data-desc="Mentoring, Delegation">
-                            <i class="ph ph-users"></i>
-                            <span>Leadership</span>
-                            <span class="years-badge">5+ yrs</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="section timeline-section">
-            <h2><i class="ph ph-briefcase"></i> Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="ph ph-rocket"></i></div>
-                    <div class="timeline-content">
-                        <h3>Lead Software Developer <span>@ Tyroo</span></h3>
-                        <span class="period">2020 - Present</span>
-                        <ul>
-                            <li>Designed robust system architectures, executed tasks seamlessly, and conducted thorough
-                                code reviews.</li>
-                            <li>Increased code coverage of unit tests to 40%, enhancing software reliability.</li>
-                            <li>Achieved a 45% reduction in AWS costs through proactive monitoring and optimization.
-                            </li>
-                            <li>Initiated a documentation process achieving 60% coverage, improving knowledge sharing
-                                and onboarding.</li>
-                            <li>Managed PIM service, processing 10M+ products daily; scaled catalog service from 600MB
-                                to 10GB.</li>
-                            <li>Enhanced image creation service, improving performance 10x and reducing costs by 30%.
-                            </li>
-                            <li>Mentored a team of 5 developers, reducing onboarding time by 30% and improving team
-                                performance.</li>
-                            <li>Replaced Kong gateway with custom FastAPI gateway, improving API response times by 25%
-                                and security.</li>
-                            <li>Delivered dynamic video ads feature, tripling ad performance and engagement rates.</li>
-                            <li>Separated staging/production in EKS clusters, improving release reliability and system
-                                stability.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="ph ph-terminal"></i></div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer <span>@ Triotech Solutions</span></h3>
-                        <span class="period">2018 - 2020</span>
-                        <ul>
-                            <li>Automated OS and application tasks using shell and Python scripting.</li>
-                            <li>Automated report generation from raw data using Python scripting.</li>
-                            <li>Developed scripts to increase system efficiency and reduce human intervention by up to
-                                70%.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="education" class="section timeline-section">
-            <h2><i class="ph ph-graduation-cap"></i> Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon"><i class="ph ph-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Technology, Computer Science</h3>
-                        <span class="school">Dronacharya College of Engineering (MDU Rohtak)</span>
-                        <span class="period">2014 - 2018</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Abhishek Saini. All rights reserved.</p>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- No-flash theme hydration: runs before paint. Defaults to dark. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          document.documentElement.setAttribute(
+            'data-theme',
+            t === 'light' ? 'light' : 'dark'
+          );
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Structured data (hydrated from data.js) -->
+    <script type="application/ld+json" data-ldjson>
+      {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" role="banner">
+      <div class="container nav__inner">
+        <a href="#top" class="nav__brand" data-brand-link>
+          <span class="nav__mark" data-brand-mark></span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary" data-nav-links></nav>
+
+        <div class="nav__actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-toggle
+            aria-label="Toggle color theme"
+            title="Toggle theme"
+          >
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <line x1="12" y1="2.5" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="21.5" />
+                <line x1="2.5" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="21.5" y2="12" />
+                <line x1="5.2" y1="5.2" x2="6.9" y2="6.9" />
+                <line x1="17.1" y1="17.1" x2="18.8" y2="18.8" />
+                <line x1="5.2" y1="18.8" x2="6.9" y2="17.1" />
+                <line x1="17.1" y1="6.9" x2="18.8" y2="5.2" />
+              </g>
+            </svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="nav__menu-btn"
+            data-menu-toggle
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
         </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+      </div>
+    </header>
 
+    <!-- Mobile drawer -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      data-mobile-menu
+      hidden
+      aria-hidden="true"
+    >
+      <div class="mobile-menu__backdrop" data-menu-close></div>
+      <nav class="mobile-menu__panel" aria-label="Mobile" data-mobile-nav-links></nav>
+    </div>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="top" class="hero" data-section="hero"></section>
+
+      <!-- NOW STRIP -->
+      <section class="now" aria-label="Current focus" data-section="now"></section>
+
+      <!-- SELECTED WORK -->
+      <section id="work" class="section" data-section="projects"></section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section" data-section="experience"></section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section section--narrow" data-section="education"></section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section section--narrow" data-section="about"></section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section" data-section="skills"></section>
+
+      <!-- WRITING -->
+      <section id="writing" class="section" data-section="writing"></section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact" data-section="contact"></section>
+    </main>
+
+    <footer class="footer" data-section="footer"></footer>
+
+    <script src="data.js"></script>
+    <script src="script.js" defer></script>
+  </body>
 </html>
