@@ -236,7 +236,6 @@ window.SITE_DATA = {
     note: 'Always happy to chat about backend systems, GenAI products, or quietly removing complexity.',
     socials: [
       { label: 'GitHub', href: 'https://github.com/abhisaini880', external: true },
-      { label: 'Resume', href: 'assets/resume.pdf', external: true },
     ],
   },
 

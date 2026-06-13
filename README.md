@@ -21,8 +21,7 @@ Then visit http://localhost:8080.
 ├── script.js         # theme toggle, scroll reveal, mobile menu, active nav, card halo
 ├── assets/
 │   ├── favicon.svg
-│   ├── og-image.png  # add a 1200x630 social preview
-│   └── resume.pdf    # add your resume
+│   └── og-image.png  # add a 1200x630 social preview
 ├── .nojekyll         # GitHub Pages: serve files as-is
 └── README.md
 ```
